@@ -252,8 +252,7 @@ yum install https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm -y ; y
 ```shell
 yum install ipvsadm ipset sysstat conntrack libseccomp -y
 
-cat >> /etc/modules-load.d/ipvs.conf <<EOF
-cat 
+cat > /etc/modules-load.d/ipvs.conf <<EOF
 ip_vs
 ip_vs_rr
 ip_vs_wrr
